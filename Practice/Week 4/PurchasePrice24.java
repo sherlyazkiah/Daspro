@@ -3,9 +3,14 @@ import java.util.Scanner;
 public class PurchasePrice24 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int price, quantity;
-        double discount=0.1, totalPrice, purchasePrice, totalDiscount;
+        String bookBrand;
+        int pageCount, price, quantity;
+        double discount=0.15, totalPrice, purchasePrice, totalDiscount;
 
+        System.out.println("Input book brand: ");
+        bookBrand = input.nextLine();
+        System.out.println("Input page count: ");
+        pageCount = input.nextInt();
         System.out.println("Input price: ");
         price = input.nextInt();
         System.out.println("Input quantity: ");

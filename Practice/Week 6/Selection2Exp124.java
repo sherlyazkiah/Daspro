@@ -15,6 +15,8 @@ public class Selection2Exp124 {
                 System.out.println("Not a leap year");
         else 
             System.out.println("Not a leap year");
+
+        input24.close();
     }
 }
 

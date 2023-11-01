@@ -1,4 +1,3 @@
-package Practice.Week7;
 import java.util.Scanner;
 
 public class ForMultiples24 {

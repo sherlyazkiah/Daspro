@@ -7,7 +7,7 @@ public class ArrayNumber24 {
         number[3] = 2000000;
 
         for (int i = 0; i < 4; i++) {
-        System.out.println(number[i]);
+            System.out.println(number[i]);
         }
     } 
 }

@@ -1,4 +1,3 @@
-package Practice.Week7;
 import java.util.Scanner;
 
 public class WhileOvertimePay24 {
@@ -23,9 +22,13 @@ public class WhileOvertimePay24 {
         if(position.equalsIgnoreCase("director")){
             continue;
         } else if(position.equalsIgnoreCase("manager")){
-            overtimePay=overtimeHours*10000;
+            overtimePay=overtimeHours*100000;
         } else if(position.equalsIgnoreCase("staff")){
             overtimePay=overtimeHours*75000;
+        } else {
+            System.out.println("Invalid position!");
+            i--;
+            continue;
         }
 
         totalOvertimePay += overtimePay;

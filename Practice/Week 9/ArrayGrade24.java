@@ -5,7 +5,7 @@ public class ArrayGrade24 {
         Scanner sc = new Scanner(System.in);
         int[] finalGrade = new int[10];
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < finalGrade.length; i++) {
             System.out.print("Input final grade "+i+" : ");
             finalGrade[i] = sc.nextInt();
         }

@@ -10,8 +10,10 @@ public class ArrayGrade24 {
             finalGrade[i] = sc.nextInt();
         }
 
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Final grade "+i+" is "+finalGrade[i]);
+        for (int i = 0; i < finalGrade.length; i++) {
+            if (finalGrade[i] > 70) {
+                System.out.println("Student "+i+" is graduate");
+            }
         }
     }
 }

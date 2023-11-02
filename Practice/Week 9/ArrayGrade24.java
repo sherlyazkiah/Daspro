@@ -12,7 +12,10 @@ public class ArrayGrade24 {
 
         for (int i = 0; i < finalGrade.length; i++) {
             if (finalGrade[i] > 70) {
-                System.out.println("Student "+i+" is graduate");
+                System.out.println("Student "+i+" is graduate!");
+            }
+            else {
+                System.out.println("Student "+i+" is not graduate!");
             }
         }
     }

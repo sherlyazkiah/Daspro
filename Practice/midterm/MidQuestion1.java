@@ -17,7 +17,7 @@ public class MidQuestion1 {
             if(typeLanguage>=3){
                 System.out.print("Graduated: ");
                 graduated = input.nextLine();
-                if(graduated.equalsIgnoreCase("D4")) || (graduated.equalsIgnoreCase("S1")){
+                if(graduated.equalsIgnoreCase("D4")){
                     System.out.print("Major: ");
                     major = input.nextLine();
                     switch (major) {

@@ -44,7 +44,18 @@ public class CinemaWithScanner24 {
                 }
             } else if (choice == 2) {
                 for (int i = 0; i < audience.length; i++) {
-                    System.out.println("Audience in the row " + (i + 1) + ": " + String.join(", ", audience[i]));
+                    System.out.print("Audience in the row " + (i + 1) + ": ");
+                    for (int j = 0; j < audience[i].length; j++) {
+                        if (audience[i][j] != null) {
+                            System.out.print(audience[i][j]);
+                        } else {
+                            System.out.print("***");
+                        }
+                        if (j < audience[i].length - 1) {
+                            System.out.print(", ");
+                        }
+                    }
+                    System.out.println();
                 }
             } else if (choice == 3) {
                 sc.close();

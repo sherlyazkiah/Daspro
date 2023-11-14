@@ -15,7 +15,7 @@ public class CinemaWithScanner24 {
             System.out.println("3. Exit");
             System.out.print("Enter your choice (1/2/3): ");
             choice = sc.nextInt();
-            
+
             sc.nextLine();
 
             if (choice == 1) {
@@ -27,6 +27,12 @@ public class CinemaWithScanner24 {
                     System.out.print("Enter column number: ");
                     column = sc.nextInt();
                     sc.nextLine(); 
+
+                    // to handle if the seat row/column number is not available
+                    if (audience[row - 1][column - 1] != null) {
+                        System.out.println("Seat already occupied. Please choose another seat.");
+                        continue;
+                    }
 
                     audience[row - 1][column - 1] = name;
                     System.out.print("Are there any other audiences to be added? (y/n): ");

@@ -30,7 +30,7 @@ public class CinemaWithScanner24 {
 
                     // to handle if the seat row/column number is not available
                     if (audience[row - 1][column - 1] != null) {
-                        System.out.println("Seat already occupied. Please choose another seat.");
+                        System.out.println("Warning! Seat already occupied by " + audience[row - 1][column - 1] + ". Choose another seat.");
                         continue;
                     }
 

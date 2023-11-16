@@ -24,6 +24,16 @@ public class NestedLoop {
             System.out.println();
         }
 
+        // menampilkan rata-rata suhu tiap kota
+        for (int i = 0; i < temps.length; i++) {
+            double totalTemp = 0;
+            for (int j = 0; j < temps[0].length; j++) {
+                totalTemp += temps[i][j];
+            }
+            double averageTemp = totalTemp / temps[0].length;
+            System.out.println("Rata-rata kota ke-" + (i + 1) + ": " + averageTemp);
+        }
+        
         /*for (int i = 0;i < temps.length; i++) {
             System.out.println("Kota ke-" + (i + 1) + ": ");
             for (int j = 0; j < temps[0].length; j++) {

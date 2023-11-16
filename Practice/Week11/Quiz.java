@@ -16,7 +16,12 @@ public class Quiz {
                 System.out.print("Tebak angka (1-10): ");
                 int answer = input.nextInt();
                 input.nextLine();
-                success = (answer == number);
+
+                if (answer == number) {
+                    success = true;
+                } else {
+                    System.out.println("Jawaban Anda " + (answer < number ? "lebih kecil" : "lebih besar") + " dari angka yang benar.");
+                }
             } while(!success);
             System.out.print("Apakah Anda ingin mengulang permainan(Y/y)? ");
             menu = input.nextLine().charAt(0);

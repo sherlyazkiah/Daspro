@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class WeeklyGrades {
     public static void main(String[] args) {
-        int[][] grades = new int[2][3];
+        int[][] grades = new int[5][7];
         input(grades);
         output(grades);
         int result[] = getMaxGrade(grades);
@@ -26,6 +26,24 @@ public class WeeklyGrades {
                             +data[i][j]);
             }
         }
+    }
+    static int getWeekWithHighestGrade(int[][] data) {
+        int highestWeek = 0;
+        int maxGrade = data[0][0];
+
+        for (int j = 0; j < data[0].length; j++) {
+            int weekSum = 0;
+            for (int i = 0; i < data.length; i++) {
+                weekSum += data[i][j];
+            }
+
+            if (weekSum > maxGrade) {
+                maxGrade = weekSum;
+                highestWeek = j + 1;
+            }
+        }
+
+        return highestWeek;
     }
     static int[] getMaxGrade(int[][] data) {
         int max = data[0][0];

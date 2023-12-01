@@ -4,7 +4,14 @@ import java.util.Scanner;
 
 public class WeeklyGrades {
     public static void main(String[] args) {
-        int[][] grades = new int[5][7];
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter the number of students: ");
+        int students = scanner.nextInt();
+        System.out.print("Enter the number of weeks: ");
+        int weeks = scanner.nextInt();
+
+        int[][] grades = new int[weeks][students];
         input(grades);
         output(grades);
         int result[] = getMaxGrade(grades);

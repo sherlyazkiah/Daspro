@@ -18,9 +18,8 @@ public class Recursive24 {
     }
 
     public static void main(String[] args) {
-        int n;
         System.out.println("Hello world!!!");
-        System.out.println(factorialRecursive(n=5));
-        System.out.println(factorialIterative(n=5));
+        System.out.println(factorialRecursive(5));
+        System.out.println(factorialIterative(5));
     }
 }

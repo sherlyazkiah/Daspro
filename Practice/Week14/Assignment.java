@@ -2,10 +2,9 @@ package Week14;
 
 public class Assignment {
     public static void main(String[] args) {
-        int n;
-        descendingSeqRecursive(n=5);
-        System.out.print(descSeqRecursive(n=5));
-        System.out.print(sumRecursive(n=5));
+        descendingSeqRecursive(5);
+        System.out.print(descSeqRecursive(5));
+        System.out.print(sumRecursive(5));
     }
 
     static void descendingSeqRecursive(int n) {

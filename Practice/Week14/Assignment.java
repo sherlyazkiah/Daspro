@@ -5,6 +5,7 @@ public class Assignment {
         int n;
         descendingSeqRecursive(n=5);
         System.out.print(descSeqRecursive(n=5));
+        System.out.print(sumRecursive(n=5));
     }
 
     static void descendingSeqRecursive(int n) {
@@ -21,6 +22,14 @@ public class Assignment {
             return ("0\n");
         } else {
             return (n+" ").concat(descSeqRecursive(n-1));
+        }
+    }
+
+    static int sumRecursive(int n) {
+        if(n==1) {
+            return 1;
+        } else {
+            return n + sumRecursive(n-1);
         }
     }
 }

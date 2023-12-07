@@ -7,6 +7,7 @@ public class PowerRecursive24 {
         if(pow==0) {
             return 1;
         } else {
+            System.out.print(base + "x");
             return base*calculatePower(base, pow-1);
         }
     }
@@ -18,7 +19,8 @@ public class PowerRecursive24 {
         System.out.print("Input Power Number: ");
         int power = sc.nextInt();
 
-        System.out.println("Result of "+base+" power "+power+" = "+
-                            calculatePower(base, power));
+        System.out.print("Result of "+base+" power "+power+" = ");
+        int result = calculatePower(base, power);
+        System.out.println("1 = " + result);
     }
 }
